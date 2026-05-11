@@ -16,7 +16,7 @@
 		<div
 			class="bg-white dark:bg-zinc-900 rounded-lg border border-zinc-200 dark:border-zinc-800 p-6"
 		>
-			{#if session}
+			{#if session?.did}
 				<div class="space-y-4">
 					<div class="flex items-center justify-between">
 						<p class="text-sm text-zinc-600 dark:text-zinc-400">

@@ -6,7 +6,6 @@ import { redirect } from '@sveltejs/kit';
 const PUBLIC_URL = process.env.PUBLIC_URL || 'http://127.0.0.1:5173';
 
 export const GET: RequestHandler = async ({ request, cookies }) => {
-	console.log({ callbackRequest: request });
 	try {
 		const requestURL = new URL(request.url);
 		const params = requestURL.searchParams;
