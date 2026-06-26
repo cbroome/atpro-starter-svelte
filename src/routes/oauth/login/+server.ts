@@ -5,7 +5,6 @@ import { error } from '@sveltejs/kit';
 import type { RequestHandler } from '@sveltejs/kit';
 
 export const POST: RequestHandler = async ({ request }) => {
-	console.log(request);
 	try {
 		const { handle } = await request.json();
 
